@@ -1,0 +1,64 @@
+\documentclass[11pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage[T1]{fontenc}
+
+\title{Chinook Music Store: Revenue Snapshot 2021--2025}
+\author{Orchid Sample Workspace}
+\date{\today}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+This snapshot summarizes sales for the Chinook sample music store over the period
+2021--2025. Across the full window the store recorded \$2{,}328.60 in revenue from
+412 invoices. Revenue is concentrated by genre: Rock alone accounts for 35.5\% of the
+total, and the top four genres together make up 73.5\% of all sales. Customer value is
+comparatively even, with the ten largest customers contributing under one fifth of revenue.
+\end{abstract}
+
+\section{Overview}
+The Chinook dataset models a digital music store: artists, albums, tracks, customers, and
+invoices. Over 2021--2025 the store's revenue was essentially flat year to year, so the
+useful structure lives in the \emph{mix} of what sold rather than in any growth trend. The
+sections below break revenue down by genre and then by customer.
+
+\section{Revenue by Genre}
+Table~\ref{tab:genre} lists the ten highest-grossing genres by total revenue, with the number
+of individual tracks sold in each. Rock leads by a wide margin, and the top four genres
+(Rock, Latin, Metal, and Alternative \& Punk) account for 73.5\% of revenue between them.
+
+\begin{table}[h]
+\centering
+\begin{tabular}{lrr}
+\hline
+\textbf{Genre} & \textbf{Revenue (\$)} & \textbf{Tracks sold} \\
+\hline
+Rock & 826.65 & 835 \\
+Latin & 382.14 & 386 \\
+Metal & 261.36 & 264 \\
+Alternative \& Punk & 241.56 & 244 \\
+TV Shows & 93.53 & 47 \\
+Jazz & 79.2 & 80 \\
+Blues & 60.39 & 61 \\
+Drama & 57.71 & 29 \\
+R\&B/Soul & 40.59 & 41 \\
+Classical & 40.59 & 41 \\
+\hline
+\end{tabular}
+\caption{Top ten genres by revenue, 2021--2025.}
+\label{tab:genre}
+\end{table}
+
+\section{Customers}
+Customer spending is remarkably even across the base. The ten highest-value customers together
+account for just 19.4\% of total revenue, and individual lifetime value falls within a narrow
+\$36.64--\$49.62 band. There is little concentration to exploit and, because nearly every
+customer placed the same number of orders, little churn signal to model.
+
+\section{Next Steps}
+Natural extensions of this snapshot include a country-level revenue breakdown, a per-artist
+catalog contribution analysis, and a cohort view of invoices by month. Each can be built
+directly on the bundled Chinook SQLite integration from within Orchid.
+
+\end{document}
